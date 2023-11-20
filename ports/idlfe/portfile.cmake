@@ -39,6 +39,8 @@ vcpkg_add_to_path("${BISON_EXE_PATH}")
 
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
+		OPTIONS
+			-DFETCHCONTENT_FULLY_DISCONNECTED=OFF
 )
 
 vcpkg_cmake_install()
