@@ -16,6 +16,13 @@ if(NOT EXISTS "${SOURCE_PATH}/.git")
 	)
 endif()
 
+message(STATUS "Pull")
+vcpkg_execute_required_process(
+  COMMAND ${GIT} pull origin master
+  WORKING_DIRECTORY ${SOURCE_PATH}
+  LOGNAME pull
+)
+
 message(STATUS "Checkout ${BRANCH}")
 vcpkg_execute_required_process(
   COMMAND ${GIT} checkout ${BRANCH}
