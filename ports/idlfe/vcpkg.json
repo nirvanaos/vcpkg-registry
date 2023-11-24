@@ -1,6 +1,6 @@
 {
   "name": "idlfe",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "homepage": "https://github.com/nirvanaos/idlfe",
   "description": "IDL compiler front-end library",
   "license": "LGPL-3.0-or-later",
