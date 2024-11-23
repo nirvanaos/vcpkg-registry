@@ -1,0 +1,17 @@
+{
+  "name": "decnumber",
+  "version": "3.68.0",
+  "port-version": 0,
+  "homepage": "https://speleotrove.com/decimal/",
+  "description": "Decimal Floating Point decNumber C Library",
+  "dependencies": [
+    {
+      "name" : "vcpkg-cmake",
+      "host" : true
+    },
+    {
+      "name" : "vcpkg-cmake-config",
+      "host" : true
+    }
+  ]
+}

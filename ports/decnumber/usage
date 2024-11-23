@@ -1,0 +1,4 @@
+decNumber provides CMake targets:
+
+find_package(decNumber REQUIRED)
+target_link_libraries(main PRIVATE decNumber)
