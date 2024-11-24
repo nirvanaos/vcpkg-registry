@@ -4,7 +4,7 @@ find_program(GIT git)
 
 set(GIT_URL "https://github.com/nirvanaos/decNumber.cmake.git")
 set(BRANCH "master")
-set(COMMIT "a3ce7c56b17722e37cdda53d4abc4c03150737db")
+set(COMMIT "f243aa964e91d3300d7fe996692b6a57a42b25a6")
 
 set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/${PORT})
 
