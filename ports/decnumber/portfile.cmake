@@ -37,7 +37,7 @@ vcpkg_cmake_configure(
 
 vcpkg_cmake_install()
 
-vcpkg_cmake_config_fixup(PACKAGE_NAME ${PORT})
+vcpkg_cmake_config_fixup(PACKAGE_NAME decNumber)
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 

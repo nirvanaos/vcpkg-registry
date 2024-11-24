@@ -2,7 +2,7 @@
   "default": {
     "decnumber": {
       "baseline": "3.68.0",
-      "port-version": 1
+      "port-version": 2
     },
     "idlfe": {
       "baseline": "3.4.3",
