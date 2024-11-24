@@ -1,7 +1,7 @@
 {
   "name": "decnumber",
   "version": "3.68.0",
-  "port-version": 2,
+  "port-version": 3,
   "homepage": "https://speleotrove.com/decimal/",
   "description": "Decimal Floating Point decNumber C Library",
   "dependencies": [
