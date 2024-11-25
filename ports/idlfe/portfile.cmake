@@ -3,7 +3,8 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 find_program(GIT git)
 
 set(GIT_URL "https://github.com/nirvanaos/idlfe.git")
-set(BRANCH "ecc470573f1fd46028ec1139627afd4861b01fff")
+set(BRANCH "master")
+set(COMMIT "498fd4b2816e30e10c5864ae0f7c6f402df2d926")
 
 set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/${PORT})
 
@@ -18,14 +19,14 @@ endif()
 
 message(STATUS "Pull")
 vcpkg_execute_required_process(
-  COMMAND ${GIT} pull origin master
+  COMMAND ${GIT} pull origin ${BRANCH}
   WORKING_DIRECTORY ${SOURCE_PATH}
   LOGNAME pull
 )
 
-message(STATUS "Checkout ${BRANCH}")
+message(STATUS "Checkout")
 vcpkg_execute_required_process(
-  COMMAND ${GIT} checkout ${BRANCH}
+  COMMAND ${GIT} checkout ${COMMIT}
   WORKING_DIRECTORY ${SOURCE_PATH}
   LOGNAME checkout
 )
@@ -46,8 +47,6 @@ vcpkg_add_to_path("${BISON_EXE_PATH}")
 
 vcpkg_cmake_configure(
     SOURCE_PATH "${SOURCE_PATH}"
-		OPTIONS
-			-DFETCHCONTENT_FULLY_DISCONNECTED=OFF
 )
 
 vcpkg_cmake_install()

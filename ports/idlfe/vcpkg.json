@@ -1,6 +1,6 @@
 {
   "name": "idlfe",
-  "version": "3.4.3",
+  "version": "3.4.4",
   "port-version": 0,
   "homepage": "https://github.com/nirvanaos/idlfe",
   "description": "IDL compiler front-end library",
@@ -13,6 +13,8 @@
     {
       "name" : "vcpkg-cmake-config",
       "host" : true
-    }
+    },
+    "decnumber",
+    "safeint"
   ]
 }
