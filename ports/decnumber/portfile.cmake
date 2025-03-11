@@ -41,5 +41,5 @@ vcpkg_cmake_config_fixup(PACKAGE_NAME decNumber)
 
 file(REMOVE_RECURSE "${CURRENT_PACKAGES_DIR}/debug/include")
 
-file(INSTALL "${SOURCE_PATH}/decNumber/ICU-license.html" DESTINATION "${CURRENT_PACKAGES_DIR}/share/${PORT}" RENAME copyright.html)
+vcpkg_install_copyright(FILE_LIST "${SOURCE_PATH}/decNumber/ICU-license.html")
 configure_file("${CMAKE_CURRENT_LIST_DIR}/usage" "${CURRENT_PACKAGES_DIR}/share/${PORT}/usage" COPYONLY)
