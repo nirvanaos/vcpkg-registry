@@ -4,15 +4,15 @@ set(VCPKG_POLICY_ALLOW_EMPTY_FOLDERS enabled)
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
     REPO nirvanaos/nidl2cpp
-    REF d1380965800628154234eeddf06ca0802414fbc6
-    SHA512 b3baa59de3ffccd39d5296b532e8020408f1906c98d1c6731a14ed15c911ce1c8f4f01f1f4242f1dc821fa52210ce4cc9d1f45584656822c96a97781f675e93a
+    REF 8aaaabb36108f0e60ff63817da8ff1fedbf1cae7
+    SHA512 48d0130f6b5398a8be51085cfb753e343ff7b533a185d4f65aab750523a66653525fa80db98b9e2044b5e0c081848811861cc46350143fe62b8ffd778956509d
     HEAD_REF master
 )
 
 #vcpkg_from_git(
 #    OUT_SOURCE_PATH SOURCE_PATH
 #    URL "https://github.com/nirvanaos/nidl2cpp"
-#    REF "d1380965800628154234eeddf06ca0802414fbc6"
+#    REF "8aaaabb36108f0e60ff63817da8ff1fedbf1cae7"
 #)
 
 vcpkg_cmake_configure(SOURCE_PATH "${SOURCE_PATH}")
