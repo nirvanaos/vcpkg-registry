@@ -1,0 +1,4 @@
+mockhost provides CMake targets:
+
+find_package (mockhost CONFIG REQUIRED)
+target_link_libraries (mockimport PRIVATE mockhost)
