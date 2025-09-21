@@ -7,6 +7,7 @@ set (BRANCH "develop")
 set (COMMIT "374bbcff81de054f2645d60d1ceab839505cac32")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/${PORT})
+set (VCPKG_POLICY_SKIP_COPYRIGHT_CHECK enabled)
 
 if (NOT EXISTS "${SOURCE_PATH}/.git")
 	message(STATUS "Cloning and fetching submodules")
@@ -39,6 +40,8 @@ vcpkg_execute_required_process (
 
 vcpkg_cmake_configure (
     SOURCE_PATH "${SOURCE_PATH}"
+    OPTIONS
+        -DBUILD_TESTING=OFF
 )
 
 vcpkg_cmake_install ()

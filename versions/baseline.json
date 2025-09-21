@@ -10,7 +10,7 @@
     },
     "mockhost": {
       "baseline": "1.1.0",
-      "port-version": 0
+      "port-version": 1
     },
     "nidl2cpp": {
       "baseline": "0.1.2",
