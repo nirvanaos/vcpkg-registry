@@ -1,7 +1,7 @@
 {
   "name": "mockhost",
-  "version": "1.1.0",
-  "port-version": 1,
+  "version": "1.1.1",
+  "port-version": 0,
   "homepage": "https://github.com/nirvanaos/mock-host.git",
   "description": "Nirvana SDK testing mock host interface",
   "license": "LGPL-3.0-or-later",
