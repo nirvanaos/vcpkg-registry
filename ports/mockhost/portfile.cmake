@@ -4,7 +4,7 @@ find_program (GIT git)
 
 set (GIT_URL "https://github.com/nirvanaos/mock-host.git")
 set (BRANCH "develop")
-set (COMMIT "26086cb6fd76cccd0cce443d13156737bee05da5")
+set (COMMIT "de453167b18dd3032e708999aa54b1a3dc0fe915")
 
 set (SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/${PORT})
 set (VCPKG_POLICY_SKIP_COPYRIGHT_CHECK enabled)
