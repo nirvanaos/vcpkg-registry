@@ -4,7 +4,7 @@ find_program(GIT git)
 
 set(GIT_URL "https://github.com/nirvanaos/idlfe.git")
 set(BRANCH "master")
-set(COMMIT "d769333ee9cc0dc7b96175bda7f09175c2986c09")
+set(COMMIT "3cca79807e0c2b152481bb6412e9d09a7364e610")
 
 set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/${PORT})
 
