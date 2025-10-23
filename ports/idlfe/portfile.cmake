@@ -3,8 +3,8 @@ vcpkg_check_linkage(ONLY_STATIC_LIBRARY)
 find_program(GIT git)
 
 set(GIT_URL "https://github.com/nirvanaos/idlfe.git")
-set(BRANCH "master")
-set(COMMIT "3cca79807e0c2b152481bb6412e9d09a7364e610")
+set(BRANCH "3.4.7")
+set(COMMIT "537ed8f6273b42dfb9fc4a96f7a8c9081af08889")
 
 set(SOURCE_PATH ${CURRENT_BUILDTREES_DIR}/src/${PORT})
 
